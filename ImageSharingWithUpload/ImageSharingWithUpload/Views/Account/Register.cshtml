@@ -1,0 +1,22 @@
+﻿@{
+    ViewBag.Title = "Registration";
+}
+
+<h2>@ViewBag.Title</h2>
+
+<form method="post" asp-action="Register" asp-controller="Account">
+
+<fieldset>
+    <legend> Provide User Information</legend>
+    <p>
+        Choose a user id: 
+        <input id="Userid" name="Userid" type="text"/>
+    </p>
+    <p>
+        Check if visually impaired:
+        <input id="ADA" name="ADA" type="checkbox" />
+    </p>
+    <input type="submit" value="Register" />
+</fieldset>
+
+</form>

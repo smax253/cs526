@@ -1,0 +1,23 @@
+﻿@{
+    ViewBag.Title = "Find an Image";
+}
+
+<h2>@ViewBag.Title</h2>
+
+@model  ImageSharingWithUpload.Models.Image
+
+<form method="get" asp-controller="Images" asp-action="Details">
+
+    <fieldset>
+        <legend>Enter Image Information</legend>
+        <p>
+            Image id: <input asp-for="Id"/>
+        </p>
+        <p>
+            <input type="submit" value="Query" />
+        </p>
+    </fieldset>
+
+    @ViewBag.Message
+
+</form>
