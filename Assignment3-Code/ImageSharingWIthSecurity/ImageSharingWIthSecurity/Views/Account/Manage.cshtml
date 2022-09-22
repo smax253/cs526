@@ -1,0 +1,44 @@
+﻿@model ImageSharingWithSecurity.Models.ManageModel
+
+@{
+    ViewBag.Title = "Update Users";
+}
+
+<h2>@ViewBag.Title</h2>
+
+<form method="post" asp-action="Manage" asp-controller="Account">
+
+    <fieldset>
+        <legend>Deactivate/Reactivate Users</legend>
+
+        <table class="gridTable">
+            <tr>
+                <th>Deactivate</th>
+                <th>User</th>
+            </tr>
+
+            @for (var i = 0; i < Model.Users.Count(); i++)
+            {
+                <tr>
+                    <td>
+                        <input type="hidden" asp-for="Users[i].Value" />
+                        @Model.Users[i].Text
+                    </td>
+                    <td>
+                        <input asp-for="Users[i].Selected"/>
+                    </td>
+                </tr>
+            }
+
+        </table>
+
+        <p>
+            <input type="submit" value="Update"/>
+        </p>
+
+    </fieldset>
+
+    <p>@ViewBag.Message</p>
+
+</form>
+

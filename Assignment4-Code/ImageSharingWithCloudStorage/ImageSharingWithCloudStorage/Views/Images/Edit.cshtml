@@ -1,0 +1,52 @@
+﻿@using ImageSharingWithCloudStorage.Controllers
+
+@model ImageSharingWithCloudStorage.Models.ImageView
+
+@{
+    ViewBag.Title = "Edit Image";
+}
+
+<h2>@ViewBag.Title</h2>
+
+<form method="post" asp-action="DoEdit" asp-controller="Images">
+
+    <fieldset>
+        <legend>Edit Image Information</legend>
+
+        <input type="hidden" asp-for="Id"/>
+
+        <p>
+            <img src="@Model.Uri" />
+        </p>
+
+        <p>Image id: @Model.Id</p>
+
+        <p>
+            Caption: <input asp-for="Caption" />
+            <span asp-validation-for="Caption" />
+        </p>
+        <p>Select a tag: 
+            <select asp-for="TagId" asp-items="Model.Tags">
+                <option disabled selected value="">Select a tag</option>
+            </select>
+        </p>
+        <p>
+            Description:<br />
+            <textarea asp-for="Description" cols="40" rows="5">Enter description here.</textarea>
+            <span asp-validation-for="Description" ></span>
+        </p>
+        <p>
+            Date taken:
+            <label asp-for="DateTaken"/>
+            <input asp-for="DateTaken"/>
+            <span asp-validation-for="DateTaken" ></span>
+        </p>
+        <p>
+            <input type="submit" value="Submit Changes" />
+        </p>
+    </fieldset>
+
+    <p>@ViewBag.Message</p>
+    <p><div class="text-danger" asp-validation-summary="ModelOnly"></div></p>
+
+</form>

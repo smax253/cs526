@@ -1,27 +1,28 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\smax2\\source\\repos\\cs526\\ImageSharingWithUpload\\ImageSharingWithUpload\\ImageSharingWithUpload.csproj": {}
+    "C:\\Users\\Max\\Source\\Repos\\cs526\\ImageSharingWithUpload\\ImageSharingWithUpload\\ImageSharingWithUpload.csproj": {}
   },
   "projects": {
-    "C:\\Users\\smax2\\source\\repos\\cs526\\ImageSharingWithUpload\\ImageSharingWithUpload\\ImageSharingWithUpload.csproj": {
+    "C:\\Users\\Max\\Source\\Repos\\cs526\\ImageSharingWithUpload\\ImageSharingWithUpload\\ImageSharingWithUpload.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\smax2\\source\\repos\\cs526\\ImageSharingWithUpload\\ImageSharingWithUpload\\ImageSharingWithUpload.csproj",
+        "projectUniqueName": "C:\\Users\\Max\\Source\\Repos\\cs526\\ImageSharingWithUpload\\ImageSharingWithUpload\\ImageSharingWithUpload.csproj",
         "projectName": "ImageSharingWithUpload",
-        "projectPath": "C:\\Users\\smax2\\source\\repos\\cs526\\ImageSharingWithUpload\\ImageSharingWithUpload\\ImageSharingWithUpload.csproj",
-        "packagesPath": "C:\\Users\\smax2\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\smax2\\source\\repos\\cs526\\ImageSharingWithUpload\\ImageSharingWithUpload\\obj\\",
+        "projectPath": "C:\\Users\\Max\\Source\\Repos\\cs526\\ImageSharingWithUpload\\ImageSharingWithUpload\\ImageSharingWithUpload.csproj",
+        "packagesPath": "C:\\Users\\Max\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Max\\Source\\Repos\\cs526\\ImageSharingWithUpload\\ImageSharingWithUpload\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\smax2\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Max\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {}
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net5.0": {
@@ -38,6 +39,12 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
+          "dependencies": {
+            "System.Drawing.Common": {
+              "target": "Package",
+              "version": "[5.0.2, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

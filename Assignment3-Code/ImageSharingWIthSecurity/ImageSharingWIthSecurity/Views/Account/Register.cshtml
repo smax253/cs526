@@ -1,0 +1,36 @@
+﻿@{
+    ViewBag.Title = "Registration";
+}
+
+<h2>@ViewBag.Title</h2>
+
+@model ImageSharingWithSecurity.Models.RegisterModel
+
+<form method="post" asp-action="Register" asp-controller="Account">
+
+    <fieldset>
+        <legend> Provide User Information</legend>
+        <p>
+            Email:
+            <input asp-for="Email" /><span asp-validation-for="Email" />
+        </p>
+        <p>
+            Password: <input asp-for="Password" /><span asp-validation-for="Password" />
+        </p>
+        <p>
+            Confirm: <input asp-for="ConfirmPassword" /><span asp-validation-for="ConfirmPassword" />
+        </p>
+        <p>
+            Visually impaired?
+            <input asp-for="ADA" /><span asp-validation-for="ADA" />
+        </p>
+        <p>
+            <input type="submit" value="Register" />
+
+        </p>
+    </fieldset>
+
+    <p>@ViewBag.Message</p>
+    <p><div class="text-danger" asp-validation-summary="ModelOnly"></div></p>
+
+</form>

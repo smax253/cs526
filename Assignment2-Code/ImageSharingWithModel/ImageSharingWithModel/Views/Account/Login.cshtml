@@ -1,0 +1,24 @@
+﻿@{
+    ViewBag.Title = "Login";
+}
+
+<h2>@ViewBag.Title</h2>
+
+@model  ImageSharingWithModel.Models.UserView
+
+<form method="post" asp-action="Login" asp-controller="Account">
+
+    <fieldset>
+        <legend>Enter Your Userid</legend>
+        <p>
+            Username: <input asp-for="Username" /><span asp-validation-for="Username" />
+        </p>
+        <p>
+            <input type="submit" value="Login" />
+        </p>
+    </fieldset>
+
+    <p>@ViewBag.Message</p>
+    <p><div class="text-danger" asp-validation-summary="ModelOnly"></div></p>
+
+</form>

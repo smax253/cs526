@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30517.126
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImageSharingWIthSecurity", "ImageSharingWIthSecurity\ImageSharingWIthSecurity.csproj", "{39FCA359-BF1E-407A-A507-A530759A8563}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{39FCA359-BF1E-407A-A507-A530759A8563}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{39FCA359-BF1E-407A-A507-A530759A8563}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{39FCA359-BF1E-407A-A507-A530759A8563}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{39FCA359-BF1E-407A-A507-A530759A8563}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9FD332CE-3315-449B-AD69-FFDD8958DEF2}
+	EndGlobalSection
+EndGlobal

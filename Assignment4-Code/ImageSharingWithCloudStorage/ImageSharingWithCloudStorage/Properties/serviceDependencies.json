@@ -1,0 +1,20 @@
+{
+  "dependencies": {
+    "mssql2": {
+      "type": "mssql",
+      "connectionId": "ConnectionStrings:ApplicationDb"
+    },
+    "storage1": {
+      "type": "storage",
+      "connectionId": "ConnectionStrings:LogEntryDb"
+    },
+    "storage2": {
+      "type": "storage",
+      "connectionId": "ConnectionStrings:ImageDb"
+    },
+    "mssql1": {
+      "type": "mssql",
+      "connectionId": "DefaultConnection"
+    }
+  }
+}

@@ -1,8 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "AruXV3MK8ZEDla4EEPi39mkLXynhqvJo3OcHUjbUtISExWHDPco4SNs8VX7Q1vN9LtBgrnENHGdcGOokC3BkKg==",
+  "dgSpecHash": "2qngHrRtGmEEaBCfL/2AdJ6jgpqPaiXIs3SQVN+6AF+lJ+FNE1wP5aVxjpayOBgdknxuz904FJ/1QUJOzpPXXg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\smax2\\source\\repos\\cs526\\ImageSharingWithUpload\\ImageSharingWithUpload\\ImageSharingWithUpload.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\Max\\Source\\Repos\\cs526\\ImageSharingWithUpload\\ImageSharingWithUpload\\ImageSharingWithUpload.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Max\\.nuget\\packages\\microsoft.netcore.platforms\\5.0.0\\microsoft.netcore.platforms.5.0.0.nupkg.sha512",
+    "C:\\Users\\Max\\.nuget\\packages\\microsoft.win32.systemevents\\5.0.0\\microsoft.win32.systemevents.5.0.0.nupkg.sha512",
+    "C:\\Users\\Max\\.nuget\\packages\\system.drawing.common\\5.0.2\\system.drawing.common.5.0.2.nupkg.sha512"
+  ],
   "logs": []
 }

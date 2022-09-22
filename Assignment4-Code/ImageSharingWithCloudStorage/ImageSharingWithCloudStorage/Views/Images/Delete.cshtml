@@ -1,0 +1,45 @@
+﻿@using ImageSharingWithCloudStorage.Controllers;
+
+@model ImageSharingWithCloudStorage.Models.ImageView
+
+@{
+    ViewBag.Title = "Delete Image";
+}
+
+<h2>@ViewBag.Title</h2>
+
+<form method="post" asp-action="DoDelete" asp-controller="Images">
+
+    <fieldset>
+        <legend>Edit Image Information</legend>
+
+        <input asp-for="Id" class="hidden" />
+
+        <p>
+            <img src="@Model.Uri" />
+        </p>
+
+        <p>Image id: @Model.Id</p>
+
+        <p>Tag: @Model.TagName</p>
+
+        <p>Caption: @Model.Caption</p>
+
+        <p>
+            Description:
+            <br />@Model.Description
+        </p>
+
+        <p>Date taken: @Model.DateTaken.ToShortDateString()</p>
+
+        <p>Uploader: @Model.Username</p>
+
+        <p>
+            <input type="submit" value="Confirm Delete" />
+        </p>
+    </fieldset>
+
+    <p>@ViewBag.Message</p>
+    <p><div class="text-danger" asp-validation-summary="ModelOnly"></div></p>
+
+</form>

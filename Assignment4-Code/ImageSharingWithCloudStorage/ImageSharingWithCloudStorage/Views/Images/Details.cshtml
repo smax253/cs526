@@ -1,0 +1,23 @@
+﻿@using ImageSharingWithCloudStorage.Controllers
+
+@model ImageSharingWithCloudStorage.Models.ImageView
+
+@{
+    ViewBag.Title = "Image Details";
+}
+
+<h2>@ViewBag.Title</h2>
+
+<p><img src="@Model.Uri" /></p>
+
+<p>Image id: @Model.Id</p>
+
+<p>Tag: @Model.TagName</p>
+
+<p>Caption: @Model.Caption</p>
+
+<p>Description: <br />@Model.Description</p>
+
+<p>Date taken: @Model.DateTaken.ToShortDateString()</p>
+
+<p>Uploader: @Model.Username</p>

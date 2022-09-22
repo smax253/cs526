@@ -1,0 +1,30 @@
+﻿@{
+    ViewBag.Title = "Login";
+}
+
+<h2>@ViewBag.Title</h2>
+
+@model  ImageSharingWithCloudStorage.Models.LoginModel
+
+<form method="post" asp-action="Login" asp-controller="Account">
+
+    <fieldset>
+        <legend>Enter Your Email and Password:</legend>
+        <p>
+            @if (ViewBag.ReturnUrl != null) { 
+                <input type="hidden" name="ReturnUrl" id="ReturnUrl" value="@ViewBag.ReturnUrl"/>
+            }
+            Email: <input asp-for="UserName" /><span asp-validation-for="UserName" />
+        </p>
+        <p>
+            Password: <input asp-for="Password" /><span asp-validation-for="Password" />
+        </p>
+        <p>
+            <input type="submit" value="Login" />
+        </p>
+    </fieldset>
+
+    <p>@ViewBag.Message</p>
+    <p><div class="text-danger" asp-validation-summary="ModelOnly"></div></p>
+
+</form>

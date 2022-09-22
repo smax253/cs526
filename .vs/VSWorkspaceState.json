@@ -1,9 +1,14 @@
 {
   "ExpandedNodes": [
     "",
+    "\\Assignment4-Code",
+    "\\Assignment4-Code\\ImageSharingWithCloudStorage",
+    "\\Assignment4-Code\\ImageSharingWithCloudStorage\\ImageSharingWithCloudStorage",
+    "\\Assignment4-Code\\ImageSharingWithCloudStorage\\ImageSharingWithCloudStorage\\DAL",
     "\\ImageSharingWithUpload",
-    "\\ImageSharingWithUpload\\ImageSharingWithUpload"
+    "\\ImageSharingWithUpload\\ImageSharingWithUpload",
+    "\\ImageSharingWithUpload\\ImageSharingWithUpload\\Controllers"
   ],
-  "SelectedNode": "\\ImageSharingWithUpload",
+  "SelectedNode": "\\Assignment4-Code\\ImageSharingWithCloudStorage\\ImageSharingWithCloudStorage\\appsettings.json",
   "PreviewInSolutionExplorer": false
 }
